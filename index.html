@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Astral by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#Resume" class="icon solid fa-folder"><span>Resume</span></a>
+						<a href="#Contact" class="icon solid fa-envelope"><span>Contact</span></a>
+						<a href="https://www.linkedin.com/in/bhargav-iyer-8073791b6/" class="icon brands fa-linkedin" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>Bhargav Iyer</h1>
+									<p>Data Scientist/Data Analytics</p>
+								</header>
+								<a href="#Resume" class="jumplink pic">
+									<span class="arrow icon solid fa-chevron-right"><span>See my Resume</span></span>
+									<img src="Image_Resume/Suit-Photo.jpeg" alt="" />
+								</a>
+							</article>
+
+						<!-- Resume -->
+							<article id="Resume" class="panel">
+								<header>
+									<h2>Resume</h2>
+								</header>
+								<p>
+									I have a downloadable button of my resume below.
+									My resume shows my skills and expertise within programming, Data Analytics, as well as Data Science.
+									I got my Bachelors of Computer Science from Virginia Tech with my major in Data-Centric Computing.
+									While at Virginia Tech I had done an internship at Analytical Services & Materials (AS&M),
+									where I had worked on TSA Data using data analysis.
+									I had to clean and create an automated python script to visualize and clean the data.
+									I also worked for an year at AS&M as a software developer contracted to NASA.
+									I worked on programs in Fortran, C++, and Python to predict Noise.  I am now currently doing my masters
+									at Old Dominion University with my degree in Computer Science.
+								</p>
+								<section>
+									<button id="downloadButton">Download Resume</button>
+									<script>
+    									document.getElementById("downloadButton").addEventListener("click", function() {
+        									// Trigger file download
+											window.open("Image_Resume/BhargavIyerResumev2.pdf", "_blank");
+    									});
+									</script>
+								</section>
+							</article>
+
+						<!-- Contact -->
+							<article id="Contact" class="panel">
+								<header>
+									<h2>Contact Me</h2>
+								</header>
+								<text>
+									Make sure to add your name to the message or subject.
+								</text>
+								<form id="emailForm" action="mailto:biyer108@odu.edu" method="get" enctype="text/plain">
+									<div>
+										<div class="row">
+											<div class="col-12">
+												<input id="subject" type="text" name="subject" placeholder="Subject" />
+											</div>
+											<div class="col-12">
+												<textarea id="body" name="body" placeholder="Message" rows="6"></textarea>
+											</div>
+											<div class="col-12">
+												<input id="submit" type="submit" value="Send Message" />
+											</div>
+										</div>
+									</div>
+
+								</form>
+								<script>
+									document.getElementById('emailForm').addEventListener('submit', function(event) {
+        								// Prevent the default form submission
+        								event.preventDefault();
+										// Get values from form inputs
+										const subject = document.getElementById('subject').value;
+										const body = document.getElementById('body').value;
+
+										let encodedSubject = encodeURIComponent(subject); // Handle spaces and special chars
+										let encodedBody = encodeURIComponent(body); // Handle spaces and special chars
+
+										let mailtoLink = `mailto:biyer108@gmail.com?subject=${encodedSubject}&body=${encodedBody}`;
+										
+										// Open mailto link
+										window.location.href = mailtoLink;
+									});
+								</script>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
